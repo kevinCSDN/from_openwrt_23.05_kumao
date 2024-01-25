@@ -51,7 +51,7 @@
 #rm -rf openwrt-packages
 
 # 拉取 immortalwrt master 源码
-git clone -b openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git iwrt
+git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrt
 # 提取 fullconenat-nft 源码
 cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
 # 提取 fullconenat 源码
