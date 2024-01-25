@@ -50,7 +50,16 @@
 #cp -r openwrt-packages/{luci-app-vssr,lua-maxminddb,helloworld} package/
 #rm -rf openwrt-packages
 
-
+# 拉取 immortalwrt master 源码
+git clone -b openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git iwrt
+# 提取 fullconenat-nft 源码
+cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
+# 提取 fullconenat 源码
+cp -rf iwrt/package/network/utils/fullconenat package/network/utils/fullconenat
+# 提取 default-settings 源码
+#cp -rf iwrt//package/emortal/default-settings package/default-settings
+# 删除 immortalwrt master 源码
+rm -rf iwrt
 
 git clone https://github.com/kiddin9/openwrt-packages
 shopt -s extglob
