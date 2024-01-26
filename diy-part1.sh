@@ -68,7 +68,7 @@ cp -r openwrt-packages/{luci-app-netdata,luci-app-smartdns,luci-app-upnp} packag
 rm -rf openwrt-packages
 
 git clone https://github.com/coolsnowwolf/lede 
-cp -r lede/package/lean/r8168 package/
+cp -r lede/package/lean/{r8168,r8125,r8152,r8101} package/
 rm -rf lede
 
 
